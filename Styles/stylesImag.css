@@ -42,3 +42,13 @@ h1 {
     font-size: 1.1em;
     color: #555;
 }
+
+nav button {
+    background-color: #4caf50;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+}

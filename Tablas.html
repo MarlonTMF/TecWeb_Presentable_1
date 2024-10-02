@@ -4,94 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas</title>
+    <title>Tablas con Layout</title>
     <link rel="stylesheet" href="./Styles/stylesTab.css">
 </head>
 <body>
-    
-    <table>
-                    <!-- Titulo de la tabla -->
-        <caption>Lista de estudiantes</caption>
-        <thead>
-            <!-- Table route -->
-            <tr>
-                <!-- Table Head ... encabezado de la tabla -->
-                <th>Nombre</th>
-                <th>Apellido</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!-- Table Data -->
-                <td>Juan</td>
-                <td>Perez</td>
-            </tr>
-        </tbody>
-    </table>
-    <tfoot>
-        <tr>
-            <!-- Table Data -->
-            <td>Tablas Indorductorias</td>
-        </tr>
-    </tbody>
-    </tfoot>
 
+    <header>
+        <h1>Tablas Estilizadas</h1>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Acerca de</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
 
-    <table>
-        <thead>
-            <tr>
-                            <!-- soy una celda , pero ocupo 2 filas -->
-                <th rowspan="2" style="background-color: aqua;" >A</th>
-                            <!-- soy una celda , pero ocupo 2 columnas -->
-                <th colspan="2" style="background-color: blueviolet;">B</th>
-            </tr>
-            <tr>
-                <th style="background-color: brown;">C</th>
-                <th style="background-color: blue;">D</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dato1</td>
-                <td>Dato2</td>
-                <td>Dato3</td>
-            </tr>
-            <tr>
-                <td>Dato4</td>
-                <td>Dato5</td>
-                <td>Dato6</td>
-            </tr>
-        </tbody>
-    </table>
+    <aside class="aside-left">
+        <h2>Menú lateral</h2>
+        <ul>
+            <li>Opción 1</li>
+            <li>Opción 2</li>
+            <li>Opción 3</li>
+        </ul>
+    </aside>
 
+    <main>
+        <table>
+            <caption>Lista de estudiantes</caption>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>Perez</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table>
-        <thead>
-            <tr>
-                
-                            <!-- soy una celda , pero ocupo 2 filas -->
-                <th colspan="3" style="background-color: aqua;" >A</th>
-                            <!-- soy una celda , pero ocupo 2 columnas -->
-                <th rowspan="2"  style="background-color: blueviolet;">B</th>
-            </tr>
-            <tr>
-                <th style="background-color: brown;">C</th>
-                <th style="background-color: blue;">D</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dato1</td>
-                <td>Dato2</td>
-                <td>Dato3</td>
-            </tr>
-            <tr>
-                <td>Dato4</td>
-                <td>Dato5</td>
-                <td>Dato6</td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" style="background-color: aqua;">A</th>
+                    <th colspan="2" style="background-color: blueviolet;">B</th>
+                </tr>
+                <tr>
+                    <th style="background-color: brown;">C</th>
+                    <th style="background-color: blue;">D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato1</td>
+                    <td>Dato2</td>
+                    <td>Dato3</td>
+                </tr>
+                <tr>
+                    <td>Dato4</td>
+                    <td>Dato5</td>
+                    <td>Dato6</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <aside class="aside-right">
+        <h2>Información adicional</h2>
+        <p>Detalles sobre las tablas presentadas.</p>
+    </aside>
+
+    <footer>
+        <nav>
+            <button>Volver al inicio</button>
+        </nav>
+    </footer>
 
 </body>
 </html>
